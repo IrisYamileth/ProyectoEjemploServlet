@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-         version="3.1">
-    <!--Definimos un servlet  --> 
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!--Definimos un servlet  -->
     <servlet>
-        <!--Le damos un nombre al servlet  --> 
+        <!--Le damos un nombre al servlet  -->
         <servlet-name>HolaMundo</servlet-name>
-        <!--Proporcionamos el nombre de la clase sin extension  --> 
-        <servlet-class>sv.irisgarcia.servlets.HolaMundo</servlet-class>                  
+        <!--Proporcionamos el nombre de la clase sin extension  -->
+        <servlet-class>sv.irisgarcia.servlets.HolaMundo</servlet-class>
     </servlet>
-    <!--Mapeamos el servlet a una URL  --> 
+    <!--Mapeamos el servlet a una URL  -->
+    <servlet>
+        <servlet-name>Comentarios</servlet-name>
+        <servlet-class>sv.irisgarcia.servlets.Comentarios</servlet-class>
+    </servlet>
     <servlet-mapping>
-        <!--El nombre del servlet. el mismo definido en el tag <servlet> --> 
+        <!--El nombre del servlet. el mismo definido en el tag <servlet> -->
         <servlet-name>HolaMundo</servlet-name>
-        <!--URL Con la que se ejecutara el Servlet --> 
-        <url-pattern>/holaMundo</url-pattern>        
+        <!--URL Con la que se ejecutara el Servlet -->
+        <url-pattern>/holaMundo</url-pattern>
     </servlet-mapping>
-    
+    <servlet-mapping>
+        <servlet-name>Comentarios</servlet-name>
+        <url-pattern>/comentarios</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
