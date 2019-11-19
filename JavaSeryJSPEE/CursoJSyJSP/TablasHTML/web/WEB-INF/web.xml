@@ -8,10 +8,6 @@
         <servlet-name>CatalogoProductos</servlet-name>
         <servlet-class>sv.irisgarcia.servlets.CatalogoProductos</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>RespuestaXML</servlet-name>
-        <servlet-class>sv.irisgarcia.servlets.RespuestaXML</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>TablaHTML</servlet-name>
         <url-pattern>/tabla</url-pattern>
@@ -19,10 +15,6 @@
     <servlet-mapping>
         <servlet-name>CatalogoProductos</servlet-name>
         <url-pattern>/catalogo</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>RespuestaXML</servlet-name>
-        <url-pattern>/respuestaXML</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
