@@ -1,0 +1,8 @@
+.navbar {
+  @include nav-justified;
+  @include media-breakpoint-down(sm) {
+    .nav-item + .nav-item {
+      margin-left: 0;
+    }    
+  }
+}
